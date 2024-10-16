@@ -1,6 +1,7 @@
 package com.Spring.Learn_Spring_Framework.game;
-
-public class MarioGame implements GamingConsole{
+@Component
+@Primary
+    public class MarioGame implements GamingConsole{
     public void up(){
         System.out.println("Jump");
     }
