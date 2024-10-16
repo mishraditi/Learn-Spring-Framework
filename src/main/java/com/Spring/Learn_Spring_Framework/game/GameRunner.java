@@ -1,7 +1,7 @@
 package com.Spring.Learn_Spring_Framework.game;
 
 import java.sql.SQLOutput;
-
+@Component
 public class GameRunner {
 //    MarioGame game;
     private GamingConsole game;
@@ -9,7 +9,7 @@ public class GameRunner {
 //    public GameRunner(MarioGame game){
 //        this.game = game;
 //    }
-    public GameRunner(GamingConsole game){
+    public GameRunner(@Qualifier("SuperContraQualifier") GamingConsole game){
         this.game = game;
     }
 
